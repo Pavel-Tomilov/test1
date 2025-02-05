@@ -248,31 +248,19 @@ body {
     position: absolute;
     background-color: red;
     color: rgb(255, 255, 255);
-    left: 255px;
-
-    left: 120px;
+    bottom: 75px;
+    right:35px;
     padding: 29px 118px;
+    clip-path: polygon(25% 0%, 100% 0%, 100% 100%, 0% 100%);
 }
 
 .svg {
     margin-left: 20px;
 }
 
-.hero__bottom {
-    position: relative;
-    background-color: rgb(255, 255, 255);
-    width: 880px;
-    height: 215px;
-    bottom: -100px;
-    position: absolute;
-    right: -351px;
-    clip-path: polygon(25% 0%, 100% 0%, 75% 100%, 0% 100%);
-}
-
 .about {
     background-color: #F4F4F2;
     padding-top: 65px;
-
 }
 
 .about__title-top {
