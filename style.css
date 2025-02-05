@@ -1,0 +1,624 @@
+/* Общие стили */
+html {
+    box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+img {
+    max-width: 100%;
+}
+
+body {
+    font-family: 'PF Din Text Comp Pro', sans-serif;
+}
+
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    padding: 0;
+    overflow: hidden;
+    border: 0;
+    clip: rect(0 0 0 0);
+}
+
+.list-reset {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.container {
+    max-width: 1700px;
+    /* при установке ширины контейнера надо задать ширину + паддинги */
+    /* паддинги нужны чтобы верстка не прилипала к краям  */
+    padding: 0 35px;
+    margin: 0 auto;
+}
+
+.btn-reset {
+    padding: 0;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+
+}
+
+.flex {
+    display: flex;
+}
+
+
+@font-face {
+    font-family: 'PF Din Text Comp Pro';
+    src: local('MontserratMedium'),
+        url("../fonts/PF Din Text Comp Pro.woff2") format("woof2"),
+        url("../fonts/PF Din Text Comp Pro.woff") format("woff");
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'PF Din Text Comp Pro';
+    src: local('PFDinTextCompPro-Regular'),
+        url("../fonts/PFDinTextCompPro-Regular.woff2") format("woff2"),
+        url("../fonts/PFDinTextCompPro-Regular.woff") format("woff");
+    font-weight: 400;
+    font-style: normal;
+}
+
+
+/* Верхнее меню */
+
+
+
+.logo {
+    grid-area: 1 / 1 / 3 / 4;
+}
+
+.header__top {
+    margin-left: 315px;
+    clip-path: polygon(2% 0%, 100% 0%, 100% 100%, 0% 100%);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: rgb(97, 77, 73);
+}
+
+.nav {
+    margin-right: auto;
+}
+
+.nav__list {
+    display: flex;
+    gap: 20px;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.logo {
+    width: 392px;
+    display: inline-block;
+}
+
+.nav__item {
+    background: rgb(97, 77, 73);
+    text-decoration: none;
+    padding: 18px 20px;
+    color: rgb(255, 255, 255);
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 17px;
+    text-align: left;
+    text-transform: uppercase;
+}
+
+.item1 {
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 17px;
+    text-align: left;
+    text-transform: uppercase;
+    color: #7C6E6B;
+    clip-path: polygon(0 0, 100% 0, 90% 100%, 0% 100%);
+    background: rgb(217, 217, 217);
+    padding: 18px 94px 18px 48px;
+}
+
+.nav__item-link {
+    display: inline-block;
+}
+
+.header-btn {
+    color: white;
+    padding: 15px 45px;
+    border-radius: 4px;
+    background: rgb(49, 19, 17);
+    margin-right: 37px;
+}
+
+.contacts {
+    color: rgb(255, 255, 255);
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 17px;
+    text-align: left;
+    text-transform: uppercase;
+    margin-right: 28px;
+}
+
+.search-btn {
+    background: rgb(97, 77, 73);
+    outline: none;
+    border: none;
+    margin-right: 40px;
+}
+
+.lang {
+    color: rgb(211, 200, 187);
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 17px;
+    text-align: left;
+    text-transform: uppercase;
+    margin-right: 15px;
+}
+
+/* Нижнее меню */
+.header__bottom {
+    align-items: center;
+    margin-left: 287px;
+    clip-path: polygon(2% 0%, 100% 0%, 100% 100%, 0% 100%);
+    background: rgb(217, 217, 217);
+    padding-top: 6px;
+    padding-bottom: 6px;
+}
+
+.submenu__item {
+    padding: 18px 20px;
+    align-items: center;
+}
+
+.submenu__list {
+    align-items: center;
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    gap: 30px;
+    padding-left: 43px;
+}
+
+
+
+.submenu__item {
+    color: rgb(80, 61, 58);
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 17px;
+    text-align: left;
+    text-transform: uppercase;
+    padding: 6px 10px;
+}
+
+
+
+.submenu__item--highlight {
+    display: inline-block;
+    transform: skewX(-30deg);
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 17px;
+    text-align: left;
+    text-transform: uppercase;
+    color: rgb(255, 255, 255);
+    background-color: rgb(178, 31, 36);
+
+
+}
+
+.link {
+    padding: 6px 50px;
+    display: inline-block;
+    transform: skewX(30deg);
+}
+
+.hero {
+    padding-top: 15px;
+    padding-bottom: 130px;
+}
+
+.hero__container {
+    position: relative;
+}
+
+.hero-btn {
+    position: absolute;
+    background-color: red;
+    color: rgb(255, 255, 255);
+    left: 255px;
+
+    left: 120px;
+    padding: 29px 118px;
+}
+
+.svg {
+    margin-left: 20px;
+}
+
+.hero__bottom {
+    position: relative;
+    background-color: rgb(255, 255, 255);
+    width: 880px;
+    height: 215px;
+    bottom: -100px;
+    position: absolute;
+    right: -351px;
+    clip-path: polygon(25% 0%, 100% 0%, 75% 100%, 0% 100%);
+}
+
+.about {
+    background-color: #F4F4F2;
+    padding-top: 65px;
+
+}
+
+.about__title-top {
+    color: rgb(178, 31, 36);
+    font-size: 66px;
+    font-weight: 500;
+    line-height: 79px;
+    text-align: left;
+    text-transform: uppercase;
+    margin: 0;
+    padding: 0;
+}
+
+.about__title-bottom {
+    color: rgb(49, 19, 17);
+    font-size: 66px;
+    font-weight: 500;
+    line-height: 79px;
+    text-align: left;
+    text-transform: uppercase;
+    margin: 0;
+    padding: 0;
+}
+
+.about__top-left {
+    position: relative;
+
+    margin-right: 40px;
+    margin-bottom: 89px;
+}
+
+.about-btn-top {
+    position: absolute;
+    color: rgb(255, 255, 255);
+    background-color: red;
+    clip-path: polygon(25% 0%, 100% 0%, 100% 100%, 0% 100%);
+    /* z-index: 1; */
+    padding: 21px 44px;
+    bottom: 20px;
+    right: 0;
+    align-items: center;
+}
+
+.about__text {
+    width: 1167px;
+    color: rgb(170, 146, 122);
+    font-size: 28px;
+    font-weight: 400;
+    line-height: 33px;
+    text-align: left;
+}
+
+.about-image {
+    height: 475px;
+    width: 926px;
+}
+
+.text-top {
+    color: rgb(124, 110, 107);
+font-size: 16px;
+font-weight: 400;
+line-height: 126.18%;
+text-align: left;
+}
+
+
+.about__top-right {
+    width: 663px;
+}
+
+.title-top {
+    margin: 0;
+    color: rgb(49, 19, 17);
+    font-size: 28px;
+    font-weight: 500;
+    line-height: 34px;
+    text-align: left;
+    text-transform: uppercase;
+}
+
+.about__bottom-left {
+    width: 663px;
+    margin-right: 40px;
+
+}
+
+.about__bottom-right {
+    position: relative;
+    margin-bottom: 89px;
+}
+
+.about-btn-bottom {
+    position: absolute;
+    color: rgb(255, 255, 255);
+    background-color: red;
+    clip-path: polygon(25% 0%, 100% 0%, 100% 100%, 0% 100%);
+    /* z-index: 1; */
+    padding: 21px 44px;
+    bottom: 20px;
+    right: 0;
+    align-items: center;
+}
+
+.sn {
+    padding-top: 130px;
+}
+
+
+.sn__container {
+    position: relative;
+    height: 860px;
+    width: 1630px;
+    background-image: url(image/3d-rendering-hydraulic-elements.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.sn-btn {
+    position: absolute;
+    background-color: red;
+    color: rgb(255, 255, 255);
+    left: 255px;
+    left: 120px;
+    padding: 29px 118px;
+}
+
+.sn__bottom {
+    background-color: rgb(255, 255, 255);
+    width: 880px;
+    height: 215px;
+    bottom: -110px;
+    position: absolute;
+    right: -426px;
+    clip-path: polygon(25% 0%, 100% 0%, 75% 100%, 0% 100%);
+}
+
+
+.sn__title {
+    margin: 0;
+    color: rgb(255, 255, 255);
+    font-size: 80px;
+    font-weight: 500;
+    line-height: 96px;
+    text-align: left;
+    text-transform: uppercase;
+}
+
+.sn__text {
+    width: 584px;
+    color: rgb(255, 255, 255);
+    font-size: 28px;
+    font-weight: 400;
+    line-height: 33px;
+    text-align: left;
+}
+
+.projects {
+    padding-top: 130px;
+    padding-bottom: 110px;
+
+}
+
+.projects__container {
+    position: relative;
+    background: rgb(191, 173, 155);
+}
+
+.projects__content {
+    width: 648px;
+    padding-top: 86px;
+    padding-left: 73px;
+    padding-bottom: 79px;
+}
+
+.projects__text {
+
+    margin: 0;
+    margin-bottom: 37px;
+    color: rgb(255, 255, 255);
+    font-size: 50px;
+    font-weight: 500;
+    line-height: 60px;
+    text-align: left;
+    text-transform: uppercase;
+}
+
+.projects__btn {
+    background-color: red;
+    left: 255px;
+    left: 120px;
+    padding: 24px 41px;
+    transform: skewX(-30deg);
+}
+
+.btn-text {
+    display: inline-block;
+    color: rgb(255, 255, 255);
+    transform: skewX(30deg);
+}
+
+.svg-btn {
+    display: inline-block;
+    color: rgb(255, 255, 255);
+    transform: skewX(30deg);
+}
+
+.ellips {
+    position: absolute;
+    width: 1148px;
+    height: 1148px;
+    right: -313px;
+    bottom: -693px;
+    border-radius: 50%;
+    filter: blur(278.5px);
+    background: linear-gradient(-32.59deg, rgba(242, 241, 240, 0.92) 73.211%, rgba(170, 146, 122, 0.92) 112.69%);
+}
+
+
+.footer {
+    position: relative;
+}
+
+.footer__container {
+    padding-top: 73px;
+}
+
+hr {
+    margin: 0;
+    background: linear-gradient(rgb(235, 232, 229), rgb(211, 200, 187));
+    height: 3px;
+    z-index: 1;
+    margin-bottom: 20px;
+    margin-top: 20px;
+
+}
+
+.footer__nav {
+    min-width: 803px;
+
+    padding-left: 318px;
+    margin-right: 102px;
+    gap: 97px;
+}
+
+.footer__list {
+    width: 203px;
+    margin-bottom: 20px;
+    color: rgb(49, 19, 17);
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 22px;
+    text-align: left;
+    text-transform: uppercase;
+}
+
+.maps {
+    position: relative;
+    width: 406px;
+    height: 369px;
+
+}
+
+.maps__content {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    bottom: 30px;
+    left: 80px;
+}
+
+.maps__btn {
+    background-color: red;
+    padding: 24px 41px;
+    transform: skewX(-30deg);
+
+
+}
+
+.phone {
+    margin-bottom: 10px;
+}
+
+.email {
+    margin-bottom: 30px;
+}
+
+.min-title {
+    color: rgb(49, 19, 17);
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 17px;
+    text-align: left;
+    text-transform: uppercase;
+}
+
+.mili-title {
+    color: rgb(49, 19, 17);
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 126.18%;
+    text-align: left;
+}
+
+.footer {
+    padding-bottom: 210px;
+}
+
+.footer-link {
+    display: inline-block;
+    transform: translateX(5px) scale(1.01);
+    background-color: red;
+    padding-left: 6px;
+    padding-right: 3px;
+}
+
+
+.grhjj {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.red {
+    color: red;
+}
+
+.footer__list {
+    color: rgb(49, 19, 17);
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 22px;
+    text-align: left;
+    text-transform: uppercase;
+}
+
+.footer__item {
+    color: rgb(170, 146, 122);
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 126.18%;
+    text-align: left;
+}
+
+.text-bot {
+font-size: 16px;
+font-weight: 400;
+line-height: 126.18%;
+text-align: left;
+}
