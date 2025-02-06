@@ -62,7 +62,7 @@ body {
 
 @font-face {
   font-family: 'PF Din Text Comp Pro';
-  src: local('MontserratMedium'),
+  src: local('PF Din Text Comp Pro'),
       url("../fonts/PF Din Text Comp Pro.woff2") format("woof2"),
       url("../fonts/PF Din Text Comp Pro.woff") format("woff");
   font-weight: 500;
