@@ -8,6 +8,7 @@
     <title>SN</title>
     <link rel="stylesheet" href="../styles/normalize.css">
     <link rel="stylesheet" href="../styles/style1024.css">
+    <script defer src="script.js"></script>
 </head>
 
 <body>
@@ -46,7 +47,7 @@
                 <video src="image/vecteezy_digital-animation-of-business-stock-market-price-chart_2273298.mp4" autoplay
                     loop controls width="964"></video>
 
-                <button class="btn-reset hero-btn">связаться с нами
+                <button class="btn-reset hero-btn open-form-btn">связаться с нами
                     <span> <svg class="svg" width="8" height="12" viewBox="0 0 8 12" fill="none"
                             xmlns="http://www.w3.org/2000/svg">
                             <path d="M1.40625 1.41211L5.95612 5.96197L1.40625 10.5118" stroke="#F4F4F2"
@@ -239,6 +240,49 @@
         <p class="text-bot">Сделано в <span class="red">Creative Mind Bureau</span></p>
     </div>
     </footer>
+    <div class="overlay" id="overlay">
+        <div class="modal-form">
+            <button class="btn-reset close-btn" id="closeForm">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M18 6L6 18M18 18L6 6" stroke="white" stroke-width="2" stroke-linecap="round" />
+                </svg>
+            </button>
+
+            <form id="applicationForm">
+                <p class="form-text">Успех начинается с правильных решений. Оставьте здесь свои контакты, и мы свяжемся
+                    с вами, чтобы предложить оптимальную технологию по увеличению процента извлекаемости полезного в
+                    конечный продукт на вашем предприятии.</p>
+                <label>Имя*</label>
+                <input type="text" name="name" required>
+
+                <label>E-Mail*</label>
+                <input type="email" name="email" required>
+
+                <label>Телефон*</label>
+                <input type="tel" name="phone" required>
+
+                <label>Описание проекта</label>
+                <textarea name="description"></textarea>
+
+                <label class="file-upload" id="file-label">
+                    <span>Приложить Файлы (До Трех Файлов)</span>
+                    <input type="file" id="fileInput" multiple class="hidden">
+                    <svg width="22" height="18" viewBox="0 0 22 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M16.5101 5.13304L9.41022 12.2329C8.56597 13.0772 7.19717 13.0772 6.35292 12.2329C5.5069 11.3869 5.50893 10.0146 6.35745 9.17108L11.8632 3.69785L13.2459 2.31518C14.9282 0.632837 17.6558 0.632838 19.3381 2.31518C21.0205 3.99751 21.0205 6.72512 19.3381 8.40746L17.9763 9.76934L12.8148 14.9309C10.1448 17.712 6.09921 18.1352 3.27061 15.4197C0.476637 12.7375 0.950206 8.71628 3.7752 5.89129L8.91637 0.749329"
+                            stroke="#614D49" stroke-linecap="round" stroke-linejoin="round" />
+                    </svg>
+                </label>
+                <p id="file-error" class="error-message"></p>
+
+                <p class="form-text-bottom">Отправляя эту форму, я принимаю <a href="#" class="form-link">политика
+                        конфиденциальности</a> этого сайта.</p>
+
+
+                        <button class="btn-reset button-form" type="submit" id="submitButton" disabled><span class="btn-text">Отправить</span></button>
+            </form>
+        </div>
+    </div>
     
 </body>
 

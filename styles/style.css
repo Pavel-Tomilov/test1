@@ -238,7 +238,7 @@ video {
 
 .hero-btn {
     position: absolute;
-    background-color: red;
+    background: rgb(178, 31, 36);
     color: rgb(255, 255, 255);
     font-size: 15.92px;
     font-weight: 500;
@@ -295,7 +295,7 @@ video {
 .about-btn {
     position: absolute;
     color: rgb(255, 255, 255);
-    background-color: red;
+    background: rgb(178, 31, 36);
     clip-path: polygon(6% 0%, 100% 0%, 100% 100%, 0% 100%);
     font-size: 15.92px;
     font-weight: 500;
@@ -375,7 +375,7 @@ video {
 .sn-btn {
     position: absolute;
     color: rgb(255, 255, 255);
-    background-color: red;
+    background: rgb(178, 31, 36);
     clip-path: polygon(6% 0%, 100% 0%, 100% 100%, 0% 100%);
     font-size: 15.92px;
     font-weight: 500;
@@ -437,7 +437,7 @@ video {
 }
 
 .projects__btn {
-    background-color: red;
+    background: rgb(178, 31, 36);
     padding: 22px 28px;
     transform: skewX(-15deg);
     margin-left: 10px;
@@ -455,8 +455,6 @@ video {
     transform: skewX(15deg);
 }
 
-
-
 .footer {
     position: relative;
 }
@@ -469,7 +467,6 @@ hr {
     margin: 0;
     background: linear-gradient(rgb(235, 232, 229), rgb(211, 200, 187));
     height: 6px;
-
 }
 
 .footer__nav {
@@ -519,7 +516,7 @@ hr {
 }
 
 .maps__btn {
-    background-color: red;
+    background: rgb(178, 31, 36);
     padding: 24px 28px;
     transform: skewX(-15deg);
 }
@@ -576,7 +573,7 @@ hr {
 
 .footer-link {
     display: inline-block;
-    background-color: red;
+    background: rgb(178, 31, 36);
     padding-left: 12px;
     padding-right: 8px;
 }
@@ -590,7 +587,7 @@ hr {
 }
 
 .red {
-    color: red;
+    background: rgb(178, 31, 36);
 }
 
 .footer__item-left {
@@ -676,9 +673,6 @@ hr {
     z-index: 999;
 }
 
-
-
-/* Стили формы */
 .modal-form {
     background: #fff;
     padding: 40px;
@@ -718,12 +712,8 @@ label {
     margin-bottom: 40px;
     padding: 0;
     border: none;
-    /* Убираем все границы */
     border-bottom: 1px solid rgb(49, 19, 17);
-    ;
-    /* Оставляем только нижнюю границу */
     outline: none;
-    /* Убираем синюю рамку при фокусе */
     color: rgb(97, 77, 73);
     font-size: 20px;
     font-weight: 400;
@@ -743,15 +733,11 @@ label {
     font-size: 16px;
 } */
 
-/* Кнопка закрытия */
 .close-btn {
     position: absolute;
     top: -25px;
     right: -25px;
 }
-
-
-
 
 .file-upload {
     display: flex;
@@ -792,8 +778,6 @@ label {
     text-transform: uppercase;
 }
 
-
-
 .btn-text {
     display: inline-block;
     transform: skewX(15deg);
@@ -813,7 +797,7 @@ label {
 }
 
 .error-message {
-    color: red;
+    background: rgb(178, 31, 36);
     font-size: 14px;
     margin-top: 5px;
     display: none;
